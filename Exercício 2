@@ -1,0 +1,20 @@
+import math
+vetor=[0]*10
+x=float (0)
+soma=0
+for c in range(0,10):
+    if c%2==0:
+        vetor[c]=float(3**c+7*math.factorial(c))
+    elif c%2==1:
+        vetor[c]=(2**c)+4*math.log1p(c)
+
+for c in range(0,10):
+   if vetor[c]>x:
+       x=vetor[c]
+
+for c in range(0,10):
+    soma+=vetor[c]
+media=soma/10
+
+print("O maior valor:{}\n média de todos valores:{}".format(x,media))
+
