@@ -1,0 +1,17 @@
+d={}
+x=0
+soma=0
+d['aluno 1']=float(input("Nota do primeiro aluno:"))
+d['aluno 2']=float(input("Nota do segundo aluno:"))
+d['aluno 3']=float(input("Nota do terceiro aluno:"))
+d['aluno 4']=float(input("Nota do quarto aluno:"))
+d['aluno 5']=float(input("Nota do quinto aluno:"))
+for c in range(1,6):
+   if d['aluno {}'.format(c)]>x:
+       x=d['aluno {}'.format(c)]
+for c in range(1,6):
+    soma+=d['aluno {}'.format(c)]
+
+media=soma/5
+
+print("Maior valor:{}\n Média:{}".format(x,media))
